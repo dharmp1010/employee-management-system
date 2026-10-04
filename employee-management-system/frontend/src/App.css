@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+input,
+select {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.container {
+  width: 90%;
+  margin: 40px auto;
+  animation: fadeIn 0.4s ease;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-header p {
+  margin-top: 5px;
+}
+
+.user-info {
+  margin-top: 30px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.dashboard-buttons {
+  margin-top: 20px;
+}
+
+.dashboard-buttons button {
+  margin: 5px;
+  transition: 0.2s;
+}
+
+.dashboard-buttons button:hover {
+  transform: scale(1.05);
+}
+
+.login-card,
+.register-card {
+  width: 350px;
+  margin: 50px auto;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  animation: fadeIn 0.5s ease;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.login-card button {
+  margin-right: 10px;
+  transition: 0.2s;
+}
+
+.login-card button:hover {
+  transform: scale(1.05);
+}
+
+.employee-table-container {
+  margin-top: 25px;
+  animation: fadeIn 0.5s ease;
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employee-table th,
+.employee-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.employee-table th {
+  text-align: left;
+}
+
+.employee-table button {
+  transition: 0.2s;
+}
+
+.employee-table button:hover {
+  transform: scale(1.05);
+}
+
+.employee-table tbody tr {
+  transition: 0.2s;
+}
+
+.employee-table tbody tr:hover {
+  transform: scale(1.01);
+}
+
+.leave-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leave-table th,
+.leave-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.leave-table th {
+  text-align: left;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app.dark {
+  min-height: 100vh;
+  background-color: #222;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app.dark table {
+  background-color: #222;
+  color: white;
+}
+
+.app.dark th {
+  background-color: #333;
+  color: white;
+}
+
+.app.dark td {
+  background-color: #222;
+  color: white;
+  border-color: #555;
+}
+
+.app.dark input,
+.app.dark select {
+  background-color: #333;
+  color: white;
+  border-color: #555;
+}
+
+.app.dark .user-info {
+  border-color: #555;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
